@@ -8,10 +8,6 @@
 # https://github.com/P3TERX/Actions-OpenWrt
 # File name: diy-part2.sh
 # Description: OpenWrt DIY script part 2 (After Update feeds)
-#
-git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
-# Modify default IP
-#sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
 #1. Modify default IP
 sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generate
@@ -45,3 +41,5 @@ chmod 0775 /etc/init.d/lucky
 chmod 7777 /usr/bin/AdGuardHome/AdGuardHome
 exit 0
 EOF
+#7. Add packages
+git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
