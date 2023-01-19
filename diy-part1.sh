@@ -15,4 +15,4 @@
 
 # Add a feed source
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
+echo 'src-git fuwa https://github.com/fuwa2019/openwrt-packages' >>feeds.conf.default
