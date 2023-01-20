@@ -22,7 +22,7 @@ cat << EOF > package/base-files/files/etc/banner
                                              
 EOF
 
-#6. 
+#6. Custom rc.local
 cat << EOF > package/base-files/files/etc/rc.local
 # Put your custom commands here that should be executed once
 # the system init finished. By default this file does nothing.
@@ -31,3 +31,5 @@ chmod 0775 /usr/bin/AdGuardHome/AdGuardHome
 rm -f /etc/init.d/adguardhome
 exit 0
 EOF
+#7. Add packages
+git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
