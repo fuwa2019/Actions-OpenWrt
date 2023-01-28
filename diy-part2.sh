@@ -8,7 +8,7 @@ sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/f
 #rm package/lean/luci-theme-argon -rf
 
 #4. Modify the system name
-sed -i 's/OpenWrt /Fuwa@20230127 OpenWrt /g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/OpenWrt /Fuwa@20230128 OpenWrt /g' package/lean/default-settings/files/zzz-default-settings
 
 #5. Customize ssh welcome message
 cat << EOF > package/base-files/files/etc/banner
